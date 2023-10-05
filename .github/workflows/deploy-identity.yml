@@ -24,4 +24,4 @@ jobs:
         context: .
         file: src/IdentityService/Dockerfile
         push: true
-        tags: aandoney/identity/svc:latest
+        tags: aandoney/identity-svc:latest
