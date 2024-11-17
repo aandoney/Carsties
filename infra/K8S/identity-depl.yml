@@ -15,6 +15,12 @@ spec:
         - name: identity-svc
           image: aandoney/identity-svc
           imagePullPolicy: Never
+          env:
+            - name: ConnectionStrings__DefaultConnection
+              valueFrom:
+                secretKeyRef:
+                  name: identity-secret
+                  key: connString
           envFrom:
             - configMapRef:
                 name: identity-svc-config
@@ -30,5 +36,5 @@ spec:
   selector:
     app: identity-svc
   ports:
-  - port: 80
-    targetPort: 80
+    - port: 80
+      targetPort: 80
