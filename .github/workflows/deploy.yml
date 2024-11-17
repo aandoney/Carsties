@@ -13,6 +13,18 @@ jobs:
         service:
           - name: 'aandoney/auction-svc'
             path: 'src/AuctionService'
+          - name: 'aandoney/search-svc'
+            path: 'src/SearchService'
+          - name: 'aandoney/bid-svc'
+            path: 'src/BiddingService'
+          - name: 'aandoney/identity-svc'
+            path: 'src/IdentityService'
+          - name: 'aandoney/gateway-svc'
+            path: 'src/GatewayService'
+          - name: 'aandoney/notify-svc'
+            path: 'src/NotificationService'
+          - name: 'aandoney/web-app'
+            path: 'frontend/web-app'
 
     steps:
     - name: Checkout code
