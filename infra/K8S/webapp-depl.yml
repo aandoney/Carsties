@@ -13,8 +13,7 @@ spec:
     spec:
       containers:
         - name: webapp-svc
-          image: aandoney/web-app
-          imagePullPolicy: Never
+          image: aandoney/web-app:latest
           env:
             - name: AUTH_SECRET
               valueFrom:

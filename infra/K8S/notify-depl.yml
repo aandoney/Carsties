@@ -13,8 +13,7 @@ spec:
     spec:
       containers:
         - name: notify-svc
-          image: aandoney/notify-svc
-          imagePullPolicy: Never
+          image: aandoney/notify-svc:latest
           env:
             - name: RabbitMQ__Username
               valueFrom:
